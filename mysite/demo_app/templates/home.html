@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title>Django App</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+      <meta name="google" content="notranslate" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <style>
+        body {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        background-color: #fdfdfd;
+        }
+        .shadow {
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #f00000;
+            border-color: #dc281e;
+        }
+        .masthead {
+            background: #28A745;
+            height: auto;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+    </style>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow" id="mainNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}">Django App</a>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <button class="btn btn-outline-light btn-lg" type="button" href="#">Login</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="masthead">
+        <div class="container">
+          <!-- <div class="row"> -->
+            <div class="site-heading text-center">
+                <h3 class="site-heading mt-3 text-white"> Congratulations 🎉 </h3>
+                <p class="text-light">You completed GitHub-Actions hands-on ! &nbsp
+                </p>
+            </div>
+          <!-- </div> -->
+        </div>
+      </header>
+      <h3 class="mx-5 mt-5">List of what you've done</h3>
+      <ul class="mt-4 list-group">
+        <li class="ml-5 w-50 list-group-item d-flex justify-content-between align-items-center">
+          1. Hello GitHub Actions!
+          <span class="badge badge-primary badge-pill">step 1</span>
+        </li>
+        <li class="ml-5 mt-4 w-50 list-group-item d-flex justify-content-between align-items-center">
+          2. Release Python packages to PyPI
+          <span class="badge badge-primary badge-pill">step 2</span>
+        </li>
+        <li class="ml-5 mt-4 w-50 list-group-item d-flex justify-content-between align-items-center">
+          3. Build Docker image & Push it to Amazon ESR
+          <span class="badge badge-primary badge-pill">step 3</span>
+        </li>
+      </ul>
+  </body>
+</html>
