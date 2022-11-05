@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: ap-northeast-1
   ECS_SERVICE: demo-ecr-service
-  ECS_CLUSTER: demo-ecs-cluster
+  ECS_CLUSTER: demo-ecr-cluster
   ECS_TASK_DEFINITION: .aws/demo-task-def.json
   CONTAINER_NAME: demo-container
 
