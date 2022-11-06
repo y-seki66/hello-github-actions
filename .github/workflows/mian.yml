@@ -7,8 +7,8 @@ on:
 
 env:
   AWS_REGION: ap-northeast-1
-  ECS_SERVICE: demo-ecr-service
-  ECS_CLUSTER: demo-ecr-cluster
+  ECS_SERVICE: demo-service
+  ECS_CLUSTER: demo-cluster
   ECS_TASK_DEFINITION: .aws/demo-task-def.json
   CONTAINER_NAME: demo-container
 
@@ -47,7 +47,7 @@ jobs:
 
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
-        uses: aws-actions/amazon-ecs-render-task-definition@97587c9d45a4930bf0e3da8dd2feb2a463cf4a3a
+        uses: aws-actions/amazon-ecs-render-task-definition@v3
         with:
           task-definition: ${{ env.ECS_TASK_DEFINITION }}
           container-name: ${{ env.CONTAINER_NAME }}
